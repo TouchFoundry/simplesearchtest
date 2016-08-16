@@ -1,0 +1,10 @@
+@import "../../../../../styles/variables";
+
+.mdl-card--expand {
+  background-color: $color-primary;
+  color: $font-color-light;
+
+  i {
+    margin-right: $card-title-icon-margin-right;
+  }
+}
