@@ -19,7 +19,5 @@ export class AppComponent implements OnInit {
     ngOnInit() {
         //runs once component has been initialised
         console.log("App running!");
-
-
     }
 }
