@@ -17,7 +17,7 @@ Welcome! Congratulations on making our shortlist! Below you will find a task tha
 4. run `npm install typings -g` (if ubuntu or mac, normally needs to be run as `sudo`)
 5. run `npm install angular-cli@latest -g` (if ubuntu or mac, normally needs to be run as `sudo`)
 6. run `npm install` -> this will download and install all the packages required to build the Angular2 FED (Don't run this `sudo`, you should not need to)
-7. 
+7. it should automatically run this, but in-case it doesn't, run `typings install`
 
 
 ## Development server
@@ -93,9 +93,9 @@ This is the primary task. Complete the app in the `ServerApp` sub-directory.
 
 ###### Requirements 
 
-1. Hit the submit button without
+1. Hit the submit button without any value in the search box, and you will see it populate a table with results. It is up to you to replicate this.
 2. Complete this in the `ServerApp` sub-directory
-3. Run `npm init` to get started. Build a simple NodeJS project, complete with `package.json`. I should be able to `npm install` to install the dependencies
+3. Run `npm init` to get started. Build a simple NodeJS project, complete with `package.json`. We should be able to `npm install` to install the dependencies after we clone your 
 4. Use ExpressJS to create a simple API server that accepts a query string. Hint: You will need to "body-parser" JSON :)
 5. Read in `data.json` and return a filtered list to the FED
 6. Move over to the `ApiDataService` in the FED, modify it to make the request to your API server
@@ -109,6 +109,6 @@ Completing this test will help us understand to what degree you satisfy the foll
 
 1) Aptitude, can you accomplish the task set forth using the Power of the Internet?
 2) Precision, can you edit just what needs to be edited in order to accomplish your goals?
-3) Attention, can you follow the guide laid forth but the architect?
+3) Attention, can you follow the guide set forth by the architect?
 
 # Good luck & thanks!
