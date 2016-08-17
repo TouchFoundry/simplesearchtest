@@ -73,7 +73,6 @@ export class ApiDataService {
             }
         });
     }
-
 }
 ```
 
@@ -107,8 +106,8 @@ This is the primary task. Complete the app in the `ServerApp` sub-directory.
 
 Completing this test will help us understand to what degree you satisfy the following criteria:
 
-1) Aptitude, can you accomplish the task set forth using the Power of the Internet?
-2) Precision, can you edit just what needs to be edited in order to accomplish your goals?
-3) Attention, can you follow the guide set forth by the architect?
+1. Aptitude, can you accomplish the task set forth using the Power of the Internet?
+2. Precision, can you edit just what needs to be edited in order to accomplish your goals?
+3. Attention, can you follow the guide set forth by the architect?
 
 # Good luck & thanks!
