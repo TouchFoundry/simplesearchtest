@@ -96,7 +96,7 @@ This is the primary task. Complete the app in the `ServerApp` sub-directory.
 1. Hit the submit button without
 2. Complete this in the `ServerApp` sub-directory
 3. Run `npm init` to get started. Build a simple NodeJS project, complete with `package.json`. I should be able to `npm install` to install the dependencies
-4. Use ExpressJS to create a simple API server that accepts a query string. Hint: You will need to "bodyParse" JSON :)
+4. Use ExpressJS to create a simple API server that accepts a query string. Hint: You will need to "body-parser" JSON :)
 5. Read in `data.json` and return a filtered list to the FED
 6. Move over to the `ApiDataService` in the FED, modify it to make the request to your API server
 7. Process the response and resolve the `Promise` to present your data to the FED

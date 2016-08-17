@@ -30,6 +30,8 @@ export class MainContentComponent implements OnInit {
             console.log(error);
             if (error == "To be completed!")
                 alert("Error, not yet wired up!");
+            else
+                alert(error);
 
             //do something about this error
         });
