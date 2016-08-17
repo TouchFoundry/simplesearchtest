@@ -4,11 +4,9 @@
         <th class="mdl-data-table__cell--non-numeric" colspan="3">Results</th>
     </tr>
     </thead>
-    <tbody *ngFor="let data of resultData; let i = index">
-        <tr *ngIf="i > 0 && i % 3 == 0">
-            <td>{{resultData[i-2].display}}</td>
-            <td>{{resultData[i-1].display}}</td>
-            <td>{{resultData[i].display}}</td>
+    <tbody *ngFor="let data of resultData">
+        <tr>
+            <td>{{data.display}}</td>
         </tr>
     </tbody>
 </table>

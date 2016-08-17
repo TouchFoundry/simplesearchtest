@@ -1,21 +1,23 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, OnInit, Input} from "@angular/core";
 import {SearchResult} from "../../../../models/search-result.model";
 
 @Component({
-  moduleId: module.id,
-  selector: 'ss-app-search-result-table',
-  templateUrl: 'search-result-table.component.html',
-  styleUrls: ['search-result-table.component.css']
+    moduleId: module.id,
+    selector: 'ss-app-search-result-table',
+    templateUrl: 'search-result-table.component.html',
+    styleUrls: ['search-result-table.component.css']
 })
 export class SearchResultTableComponent implements OnInit {
-  @Input()
-  resultData: {[matchedTerm:string]:SearchResult};
+    @Input()
+    resultData:{[matchedTerm:string]:SearchResult};
 
-  constructor() { }
+    constructor() {
+    }
 
-  ngOnInit() {
-    console.log(this.resultData);
+    ngOnInit() {
+        console.log(this.resultData);
 
-  }
+    }
+
 
 }
