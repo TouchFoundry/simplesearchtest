@@ -1,2 +1,12 @@
 @import "material";
 @import "variables";
+
+.app-loading{
+  width: 100%;
+  height: 100%;
+
+  .mdl-spinner {
+    margin: 25% auto;
+    display: block;
+  }
+}

@@ -1,6 +1,7 @@
 <div class="search_input_card mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
     <div class="mdl-card__title mdl-card--expand">
-        <i class="material-icons">help</i><h2 class="mdl-card__title-text">SimpleSearch Test</h2>
+        <i class="material-icons">help</i>
+        <h2 class="mdl-card__title-text">SimpleSearch Test</h2>
     </div>
 
     <div class="mdl-card__supporting-text">
@@ -8,16 +9,34 @@
         Below is input component that needs to be updated with the logic required to perform an AJAX request to an API.
         This input form is in it's own component, all you need to is expand that component.
 
-        <div class="input">
-            <form action="#">
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="sample3">
-                    <label class="mdl-textfield__label" for="sample3">Text...</label>
-                </div>
-            </form>
+        <div class="search-form">
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="mock">
+                <input type="radio" id="mock" class="mdl-radio__button" name="dataType" value="mock"
+                       (click)="searchQueryType = 'mock'"
+                       [checked]="searchQueryType == 'mock'">
+                <span class="mdl-radio__label">Mock Data</span>
+            </label>
 
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">test</button>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="api">
+                <input type="radio" id="api" class="mdl-radio__button" name="dataType" value="api"
+                       (click)="searchQueryType = 'api'"
+                       [checked]="searchQueryType == 'api'">
+                <span class="mdl-radio__label">Api Data</span>
+            </label>
+
+            <br>
+
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="search-input" [(ngModel)]="searchTerm">
+                <label class="mdl-textfield__label" for="search-input">Your awesome search term</label>
+            </div>
+
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                    (click)="doSubmit()">Submit
+            </button>
         </div>
     </div>
+
+    <ng-content></ng-content>
 </div>
 

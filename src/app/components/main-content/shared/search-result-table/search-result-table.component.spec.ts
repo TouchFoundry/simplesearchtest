@@ -3,11 +3,11 @@
 import { By }           from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 import { addProviders, async, inject } from '@angular/core/testing';
-import { MainContentComponent } from './main-content.component';
+import { SearchResultTableComponent } from './search-result-table.component';
 
-describe('Component: MainContent', () => {
+describe('Component: SearchResultTable', () => {
   it('should create an instance', () => {
-    let component = new MainContentComponent();
+    let component = new SearchResultTableComponent();
     expect(component).toBeTruthy();
   });
 });

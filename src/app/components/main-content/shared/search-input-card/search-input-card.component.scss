@@ -8,3 +8,14 @@
     margin-right: $card-title-icon-margin-right;
   }
 }
+
+.search-form{
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  margin: 16px auto;
+  padding: 16px;
+
+  button{
+    margin-left: 16px;
+  }
+}
