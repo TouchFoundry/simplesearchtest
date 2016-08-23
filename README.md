@@ -15,7 +15,7 @@ Welcome! Congratulations on making our shortlist! Below you will find a task tha
 2. `node` version `4.2.2` (updating this is dependent on your OS)
 3. `npm` version `3.10.3` (you can usually run `npm install npm -g` to update, might need to be run as `sudo` on ubuntu or mac)
 4. run `npm install typings -g` (if ubuntu or mac, normally needs to be run as `sudo`)
-5. run `npm install angular-cli@latest -g` (if ubuntu or mac, normally needs to be run as `sudo`)
+5. run `npm install angular-cli@1.0.0-beta.10 -g` (if ubuntu or mac, normally needs to be run as `sudo`)
 6. run `npm install` -> this will download and install all the packages required to build the Angular2 FED (Don't run this `sudo`, you should not need to)
 7. it should automatically run this, but in-case it doesn't, run `typings install`
 
@@ -95,7 +95,9 @@ This is the primary task. Complete the app in the `ServerApp` sub-directory.
 1. Hit the submit button without any value in the search box, and you will see it populate a table with results. It is up to you to replicate this.
 2. Complete this in the `ServerApp` sub-directory
 3. Run `npm init` to get started. Build a simple NodeJS project, complete with `package.json`. We should be able to `npm install` to install the dependencies after we clone your 
-4. Use ExpressJS to create a simple API server that accepts a query string. Hint: You will need to "body-parser" JSON :)
+4. Use ExpressJS to create a simple API server that accepts a query string. 
+   Hints: a. You will need to "body-parser" JSON
+          b. You will need CORS handling
 5. Read in `data.json` and return a filtered list to the FED
 6. Move over to the `ApiDataService` in the FED, modify it to make the request to your API server
 7. Process the response and resolve the `Promise` to present your data to the FED
