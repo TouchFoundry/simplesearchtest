@@ -3,8 +3,11 @@
         <div class="wrapper mdl-grid">
             <ss-app-welcome-card></ss-app-welcome-card>
             <ss-app-search-input-card (submitCallback)="performSearchQuery($event)">
-                <ss-app-search-result-table *ngIf="searchResults" [resultData]="searchResults"></ss-app-search-result-table>
+                <ss-app-search-result-table *ngIf="searchResults"
+                                            [resultData]="searchResults"></ss-app-search-result-table>
             </ss-app-search-input-card>
+            <!--TODO *bonus* insert a 'no results found' element here!-->
+            <!--TODO *bonus* insert an 'search error ' element here!-->
         </div>
     </div>
 </main>

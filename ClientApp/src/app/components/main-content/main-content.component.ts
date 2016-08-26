@@ -12,28 +12,35 @@ import {SearchResultTableComponent} from "./shared/search-result-table/search-re
     directives: [WelcomeCardComponent, SearchInputCardComponent, SearchResultTableComponent]
 })
 export class MainContentComponent implements OnInit {
-    searchResults:SearchResult[] = null;
+    searchResults: SearchResult[] = null;
 
-    constructor(private apiDataService:ApiDataService) {
+    constructor(private apiDataService: ApiDataService) {
     }
 
     ngOnInit() {
     }
 
-    performSearchQuery(query:{searchTerm:string, queryType:string}) {
+    performSearchQuery(query: {searchTerm: string, queryType: string}) {
         this.searchResults = null;
 
         this.apiDataService.performSearchRequest(query.searchTerm, query.queryType).then(resultObject => {
             this.searchResults = resultObject;
             console.log(this.searchResults);
+            /* TODO * BONUS * wire up "no search results"
+             enter main-content.component.html and add some HTML that would be our "no results found" element
+             There is a "no-results" class for you to use, feel free to use your own or improve upon the one in existence
+             */
         }, error => {
             console.log(error);
             if (error == "To be completed!")
                 alert("Error, not yet wired up!");
-            else
+            else {
                 alert(error);
-
-            //do something about this error
+                /* TODO * BONUS * do something about this error
+                 enter main-content.component.html and add some HTML that would be our error message element
+                 There is a "search-error" class for you to use, feel free to use your own or improve upon the one in existence
+                */
+            }
         });
     }
 

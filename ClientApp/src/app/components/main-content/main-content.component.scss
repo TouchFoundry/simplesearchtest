@@ -1,0 +1,41 @@
+@import "../../../styles/variables";
+
+.mdl-layout__content {
+  background-color: #F5F5F5;
+  width: 100%;
+
+  .wrapper {
+    max-width: 900px;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex-shrink: 0;
+  }
+}
+
+ss-app-search-result-table{
+  margin: 12px auto;
+}
+
+.no-results{
+  .mdl-card--expand {
+    background-color: $color-primary;
+    color: $font-color-light;
+
+    i {
+      margin-right: $card-title-icon-margin-right;
+    }
+  }
+}
+
+.search-error{
+  .mdl-card--expand {
+    background-color: $color-accent;
+    color: $font-color-light;
+
+    i {
+      margin-right: $card-title-icon-margin-right;
+    }
+  }
+}
