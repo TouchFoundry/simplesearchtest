@@ -99,7 +99,7 @@ Your task is to build an API, using NodeJS and ExpressJS
 
 1. To get an idea of what needs to happen, Hit the submit button without any value in the search box, and you will see it populate a table with results. It is up to you to replicate this.
 2. Please complete the server application in the `ServerApp` sub-directory
-3. Run `npm init` to get started. Build a simple NodeJS project, complete with `package.json`. We should be able to `npm install` to install the dependencies after we clone your 
+3. Run `npm init` to get started. Build a simple NodeJS project, complete with `package.json`. We should be able to `npm install` to install the dependencies after we clone your source
 4. Use ExpressJS to create a simple API server that accepts a query string. 
    Hints: a. You will need to "body-parser" JSON
           b. You will need CORS handling
