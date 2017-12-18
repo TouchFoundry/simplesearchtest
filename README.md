@@ -13,12 +13,12 @@ Welcome! Congratulations on making our shortlist! Below you will find a task tha
 
 1. `git clone <path to your repo of test>`
 2. `node` version `4.2.2` (updating this is dependent on your OS)
-3. `npm` version `3.10.3` (you can usually run `npm install npm -g` to update, might need to be run as `sudo` on ubuntu or mac)
+3. `npm` version `3.10.3` (you can usually run `npm install npm@3.10.3 -g` to update, might need to be run as `sudo` on ubuntu or mac)
 4. run `npm install typings -g` (if ubuntu or mac, normally needs to be run as `sudo`)
 5. run `npm install angular-cli@1.0.0-beta.10 -g` (if ubuntu or mac, normally needs to be run as `sudo`)
 6. run `npm install` -> this will download and install all the packages required to build the Angular2 `ClientApp` (Don't run this `sudo`, you should not need to)
 7. it should automatically run this, but in-case it doesn't, run `typings install`
-
+8. MEGA PRO TIP: If you already have other versions of Node, NPM, typings or angular-cli installed, use Docker to instantiate a clean development environment. We recommend the [Ubuntu 16.04 docker image](https://hub.docker.com/_/ubuntu/) that can be found on Docker Hub 
 
 ## Development server for ClientApp
 Step into the `ClientApp` directory (`cd ClientApp/`) and run `npm start` or `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
